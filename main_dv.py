@@ -25,7 +25,7 @@ def connect_to_arista_device(ip, username, password):
             net_connect.enable()
 
             # Running the 'show ip int brief' command
-            output = net_connect.send_command('show ip int brief')
+            output = net_connect.send_command('sh run')
             print(output)
 
     except Exception as e:
